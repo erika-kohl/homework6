@@ -2,12 +2,15 @@ var video = document.querySelector("#myVideo");
 
 window.addEventListener("load", function() {
 	video = document.querySelector("#myVideo");
+	console.log("Starting");
+	console.log(video.volume);
 });
 
 //Play Button - playVideo()
 document.querySelector("#play").addEventListener("click", function(){
 	video.play();
 	console.log("Play Video");
+	let vol = document.getElementById('volume').innerHTML = (video.volume * 100) + "%";
 });
 	
 //Pause Button -pauseVideo()
