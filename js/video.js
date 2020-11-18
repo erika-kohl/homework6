@@ -44,8 +44,8 @@ document.querySelector('#faster').addEventListener("click", function(){
 volumeSlider = document.querySelector('#volumeSlider')
 document.querySelector('#volumeSlider').addEventListener("change", function(){
 	console.log(volumeSlider);
-	video.volume = volumeSlider.value / 100;
-	console.log(video.volume);
+	console.log(volumeSlider.value / 100);
+	video.volume = (volumeSlider.value / 100);
 	document.getElementById('volume').innerHTML = (video.volume * 100) + "%";
 });
 
